@@ -14,4 +14,7 @@ print(totaalstokbroden, "euro")
 
 totaalprijs = totaalstokbroden + totaalcroissantjes - 1.50
 
-print("‘De feestlunch kost je bij de bakker", totaalprijs ,"euro voor de", aantalCroissantjes, "croissantjes en de", aantalStokbroden, "stokbroden als de 3 kortingsbonnen nog geldig zijn!’")
+print("‘De feestlunch kost je bij de bakker", totaalprijs ,"euro voor de 17 croissantjes en de 2 stokbroden als de 3 kortingsbonnen nog geldig zijn!’")
+
+
+

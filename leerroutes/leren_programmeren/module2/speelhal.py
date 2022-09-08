@@ -1,10 +1,25 @@
+
+aantalminuten = input("hoeveel minuten?:")
+aantalminuten = int(aantalminuten)
 speelhal = float(7.45)
-vrgamen = float(0.39)
-
-gamen = vrgamen * 9
-
-print(speelhal * 4 + gamen * 4)
-dagje_uit = speelhal * 4 + gamen * 4
+vrgamen = (0.39 / 5) * aantalminuten
 
 
-print("Dit geweldige dagje-uit met 4 mensen in de Speelhal met 45 minuten VR kost je maar", speelhal * 4 + gamen * 4 ,"euro")
+aantalmensen = input("hoeveel mensen?:")
+aantalmensen = int(aantalmensen)
+
+speelhaltotaal = speelhal * aantalmensen 
+
+print(speelhaltotaal , "euro")
+
+
+vrtotaal = vrgamen * aantalmensen 
+print(vrtotaal, "euro")
+
+totaalprijs = vrtotaal + speelhaltotaal
+
+print("‘Dit geweldige dagje-uit met", aantalmensen ,"mensen in de Speelhal met" , aantalminuten," minuten VR kost je maar" , totaalprijs ,"euro’")
+
+
+
+
