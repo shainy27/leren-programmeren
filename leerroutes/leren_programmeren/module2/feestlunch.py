@@ -2,16 +2,16 @@ aantalCroissantjes = input("hoeveel croissantjes?:")
 aantalCroissantjes = int(aantalCroissantjes)
 
 
-totaalcroissantjes = aantalCroissantjes * 0.39
-print(totaalcroissantjes, "euro")
+totaalcroissantjes = aantalCroissantjes * 39
+print(totaalcroissantjes, "cent")
 
 aantalStokbroden = input("hoeveel stokbroden?:")
 aantalStokbroden = int(aantalStokbroden)
 
-totaalstokbroden = aantalStokbroden * 2.78
-print(totaalstokbroden, "euro")
+totaalstokbroden = aantalStokbroden * 278
+print(totaalstokbroden, "cent")
 
 
-totaalprijs = totaalstokbroden + totaalcroissantjes - 1.50
+totaalprijs = totaalstokbroden + totaalcroissantjes - 150
 
-print("‘De feestlunch kost je bij de bakker", totaalprijs ,"euro voor de", aantalCroissantjes, "croissantjes en de", aantalStokbroden, "stokbroden als de 3 kortingsbonnen nog geldig zijn!’")
+print("‘De feestlunch kost je bij de bakker", totaalprijs ,"cent voor de", aantalCroissantjes, "croissantjes en de", aantalStokbroden, "stokbroden als de 3 kortingsbonnen nog geldig zijn!’")
