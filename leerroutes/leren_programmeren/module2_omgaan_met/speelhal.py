@@ -1,15 +1,11 @@
 
-aantalminuten = input("hoeveel minuten?:")
-aantalminuten = int(aantalminuten)
+aantalminuten = int(input("hoeveel minuten?:"))
 speelhal = 745
-vrgamen = ( 39 / 5 ) * aantalminuten
+vrgamen = 39 * aantalminuten / 5
 
-
-aantalmensen = input("hoeveel mensen?:")
-aantalmensen = int(aantalmensen)
+aantalmensen = int(input("hoeveel mensen?:"))
 
 speelhaltotaal = speelhal * aantalmensen 
-
 print(speelhaltotaal , "cent")
 
 
@@ -18,7 +14,7 @@ print(vrtotaal, "cent")
 
 totaalprijs = vrtotaal + speelhaltotaal
 
-print("‘Dit geweldige dagje-uit met",aantalmensen,"mensen in de Speelhal met" ,aantalminuten," minuten VR kost je maar" ,totaalprijs ,"cent’")
+print(f'Dit geweldige dagje-uit met {aantalmensen} mensen in de Speelhal met {aantalminuten} minuten VR kost je maar {totaalprijs} cent')
 
 
 
