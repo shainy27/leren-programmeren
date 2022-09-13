@@ -35,7 +35,6 @@ elif user_input == "scissors" and computer_pick == "1":
   user_wins = +1
   
 
-
 else:
     print("You lost!")
     computer_wins += 1
