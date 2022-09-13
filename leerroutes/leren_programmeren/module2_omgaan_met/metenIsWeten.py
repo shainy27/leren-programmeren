@@ -2,10 +2,25 @@
 a = int(input("voer een getal in:"))
 b = int(input("voer een getal in:"))
 
-max = a
+
 
 if a > b:
+    max = a
+    min = b
     print(f'a is het grootste getal: {max}')
 
-if b > a:
-    print(f'b is het grootste getal: {b}')
+elif b > a:
+    max = b
+    min = a
+    print(f'a is het kleinste getal: {min}')
+
+elif a == b:
+    max = a
+    min = b
+    print("a en b zijn even groot")
+
+print(f"het minimum is {min}")
+print(f"het maximum is {max}")
+
+
+
