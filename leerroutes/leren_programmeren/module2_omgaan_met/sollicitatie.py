@@ -1,6 +1,15 @@
 
 
+from ast import Name
+
+
 naam = input("Wat is uw naam?")
+if naam == "suhaly":
+  raise NameError("Suhaly is hier niet welkom")
+
+age = int(input("Hoe oud bent u?"))
+if age == 36:
+  raise NameError("u bent al veel te oud")
 
 man = input("Bent u een man en heeft u een snor langer dan 10 cm? Ja/Nee")
 if man == "ja":
@@ -43,13 +52,11 @@ else:
 
 lengte = int(input("Wat is uw lengte in cm?"))
 goede_lengte = lengte >=150
+if lengte <100:
+  raise NameError("sorry we laten geen dwergen toe")
 
 
 gewicht = int(input("Hoeveel weegt u?"))
-# if gewicht >= 90: 
-#   goede_gewicht = True
-# else:
-#   goede_gewicht = False
 goede_gewicht = gewicht >= 90
 
 
