@@ -11,7 +11,7 @@ samsung = float(input("Hoeveel kost de Samsung Galaxy S22?"))
 
 if iphone > samsung:
     print(f"De Iphone 13 is het duurst, de telefoon kost: {iphone} Euro")
-    print(f"De Samsung is het goedkoopst, de telefoon kost: {samsung} Euro")
+    print(f"De Samsung Galaxy S22 is het goedkoopst, de telefoon kost: {samsung} Euro")
     if iphone and samsung >900:
         print("Het advies is dus geen telefoon te kopen, ze zijn te duur.")
     else:
