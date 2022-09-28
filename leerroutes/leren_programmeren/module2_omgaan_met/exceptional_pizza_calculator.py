@@ -1,5 +1,6 @@
 from socket import getprotobyname
 from ssl import ALERT_DESCRIPTION_CERTIFICATE_UNOBTAINABLE
+from tkinter.tix import Tree
 
 small = 9.99
 medium = 13.99
@@ -8,26 +9,26 @@ large = 17.99
 print(f"Hallo! kies hier de afmeting van uw pizza. de prijzen zijn: Small ({small}), medium ({medium}),large ({large})")
 score = +1
 
-while score == 1:
+while True:
     try:
         smallpizzas = int(input("Hoeveel small pizzas wilt u?:"))
-        score =+2
+        break
     except:
         print("Voer een geldig antwoord in! Als u geen small pizzas wilt voer dan 0 in.")
 
 
-while score == 2:
+while True:
     try:
          mediumpizzas = int(input("Hoeveel medium pizzas wilt u?:"))  
-         score =+3
+         break
     except:
         print("Voer een geldig antwoord in! Als u geen medium pizzas wilt voer dan 0 in.")
 
 
-while score == 3:
+while True:
     try:
         largepizzas = int(input("Hoeveel large pizzas wilt u?:")) 
-        score =+ 4
+        break
     except:
         print("Voer een geldig antwoord in! Als u geen grote pizzas wilt voer dan 0 in.")
 
