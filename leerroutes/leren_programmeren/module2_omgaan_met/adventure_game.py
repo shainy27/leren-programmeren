@@ -170,7 +170,7 @@ def main():
           energy = 3
           sprint("You stay the night, your energy and health points are back to 3!")
           sprint("You get up the next morning and continue on your journey")
-          break
+          
 
         if rest in ("N", "n", "no", "No"):
           sprint("You decide not to stay the night and continue on your journey") 
