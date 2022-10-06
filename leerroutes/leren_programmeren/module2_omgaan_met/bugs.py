@@ -18,21 +18,24 @@ else:
     print("Die ken ik niet...")
 
 favoriteColor = input('En wat is je favoriete kleur? ') 
-trueOrFalse = str(random.randint(0,1))
-if True:
+trueOrFalse = random.randint(0,1)
+
+if trueOrFalse:
     print('Ik vind dat ook een mooie kleur!')
-elif not False:
-    print('TBH, ik hou niet zo van {}...'.format(favoritecolor))
+else:
+    print(f'TBH, ik hou niet zo van {favoriteColor}...')
 
 num1 = random.randint(1,10)
 num2 = random.randint(5,15)
 numT = num1+num2
-try:
-    number = int(input(f'En weet jij wat {num1}+{num2} is? ') )
-except:
-    print('Nee dat klopt niet {naam}'.format(name))
 
-if number == numT:
-    print('Dat is juist')
-else:
+try:
+    number = int(input(f'En weet jij wat {num1}+{num2} is?'))
+    if number == numT:
+      print('Dat is juist')
+    else:
+      print('Nee dat klopt niet {naam}'.format(name))
+except:
     print('Dat is geen nummer!')
+
+    

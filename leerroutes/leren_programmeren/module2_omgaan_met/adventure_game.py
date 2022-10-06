@@ -354,8 +354,7 @@ def main():
             if (health) <= 0 or (energy) <=0 :
               sprint("You don't have enough points to continue. Game over!")
               exit()
-            else:
-               break
+            
 
           if resting in ("No", "n" ,"NO", "no", "N"): 
             sprint("You decide not to rest and keep exploring the jungle")
@@ -381,6 +380,7 @@ def main():
             if swim in ("yes", "Yes", "YES", "Y", "y"):
               sprint("You get into the body of water to relax. Then you start to feel movement in the water. There's piranhas in the water!")
               sprint("You try to get out but it's too late, you get attacked. Game over!")
+              exit()
 
             if swim in ("no" , "No", "NO", "n", "N"):
               sprint("You decide not to take a swim and continue walking until you reach a cave.")
