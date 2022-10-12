@@ -1,19 +1,17 @@
 #Adventure game
-from ast import If
-from difflib import restore
-from email.base64mime import header_length
-from operator import truediv
+
 from queue import Empty
+from test1 import *
 
 
 
 def main():
+
     
     
     
     
-    from asyncore import loop
-    from tkinter import END, N
+    
     from threading import Event
     import sys,time
     def sprint(str):
@@ -24,6 +22,7 @@ def main():
 
     health = 3
     energy = 3
+
 
 
 
@@ -64,7 +63,7 @@ def main():
     Event().wait(1)  
     #je komt een slang tegen, je krijgt de keuze om te vechten of te rennen
     while True:  
-      print(r'''   
+      print('''   
                      ---_ ......._-_--.
                     (|\ /      / /| \  \
                     /  /     .'  -=-'   `.
@@ -83,38 +82,34 @@ def main():
                                     \_
            ''')
 
-      snake = str(input("As you start exploring the jungle you hear noises coming from behind you. It's a snake! Fight the snake or Run? Run/Fight:"))
-      if snake in ("run", "r", "Run", "RUN"):
-        energy = energy - 1
-        sprint("You run away and escape the snake! The running made you tired. You lose an energy point!")
-        print(f'''Your health and energy points are now:
-        health: {health}
-        Energy: {energy}     
-        ''')
-        Event().wait(2) 
-
+      snake = input("As you start exploring the jungle you hear noises coming from behind you. It's a snake! Fight the snake or Run? Run/Fight:")
+      if snake in ("run", "r", "Run", "RUN") +  ("Fight", "f", "fight", "FIGHT"):
         break
-      
-      if snake in ("Fight", "f", "fight", "FIGHT"):
-        health = health - 2
-        print("You try to fight the snake with your bare hands and get bitten. You lose 2 health points!")
-        print(f'''Your health and energy points are now:
-        health: {health}
-        Energy: {energy}   
-        ''')
-        Event().wait(2) 
-        if (health) <= 0 or (energy) <=0 :
-           sprint("You don't have enough points to continue. Game over!")
-           exit()
-        else:
-          break
-        
       else:
-        print("Please enter a valid choice!")
-        continue
+         print("Please enter a valid choice!")
+        
+    if snake in ("run", "r", "Run", "RUN"):
+      energy = energy - 1
+      sprint("You run away and escape the snake! The running made you tired. You lose an energy point!")
+      print(f'''Your health and energy points are now:
+      health: {health}
+      Energy: {energy}     
+      ''')
+      Event().wait(2) 
+    
+    elif snake in ("Fight", "f", "fight", "FIGHT"):
+      health = health - 2
+      print("You try to fight the snake with your bare hands and get bitten. You lose 2 health points!")
+      print(f'''Your health and energy points are now:
+      health: {health}
+      Energy: {energy}   
+      ''')
+      Event().wait(2)
+      if (health) <= 0 or (energy) <=0 :
+          sprint("You don't have enough points to continue. Game over!")
+          exit()
 
-
-    Event().wait(2) 
+    Event().wait(2)
 
 
 
@@ -496,11 +491,11 @@ def main():
             exit()
 
           else:
-              print("That isn't right {name}. 2 more tries left!")
+              print(f"That isn't right {name}. 2 more tries left!")
               print("Before Mount Everest was discovered, what was the highest mountain in the world?")
               riddle = str(input("Solve te riddle to win the game:"))
               if riddle in ("mount everest", "Mount Everest", "mount Everest", "Mount everest"):
-                print("Congratulations {name} you found the treasure and won the game!")
+                print(f"Congratulations {name} you found the treasure and won the game!")
                 print('''        
                            .=""_;=.
                        ,-"_,=""     `"=.
