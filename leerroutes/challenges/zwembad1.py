@@ -1,18 +1,25 @@
-# hoeveel afstand groote zwembad? dat zijn voorrijkosten
+
 # hoeveel m uitgraven? 
 # hoeveel m3 afvoer?
 
-lengte = float(input("Hoe lang"))
-breedte = float(input("Hoe breed"))
-diepte = float(input("Hoe diep"))
+# lengte = float(input("Hoe lang")) #meter
+# breedte = float(input("Hoe breed")) #meter
+# diepte = float(input("Hoe diep")) #meter
+
+
+lengte = 8 
+breedte = 3
+diepte = 1.5
+
+afvoeren = 32.50
+zwembadgrond = lengte * breedte * diepte
 
 
 
 
-zwembad = lengte * breedte
 
-print(zwembad)
 
-# totaalzwembad = 32,50 * zwembad
+print(f"{zwembadgrond}")
 
-# print(f"{totaalzwembad} euro" )
+
+     
