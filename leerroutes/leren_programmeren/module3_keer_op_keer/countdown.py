@@ -9,10 +9,10 @@ while True:
     except:
         print("Voer een geldig aantal seconden in!")
 
-for i in range(cd):
-    if (cd - 1):
-        Event().wait(1)
-    print(str(cd - i), "Seconds")
+for i in range(10,0,-1):
+    Event().wait(1)
+    print(f"{i} Seconds")
+    # print(str(cd - i), "Seconds")
     
 
 Event().wait(1)

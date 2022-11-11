@@ -13,8 +13,9 @@ for move in range(8):
     robotArm.grab()
     robotArm.moveRight()
     robotArm.drop()
-    robotArm.moveLeft()
-    robotArm.moveLeft()
+    if move <7:
+        robotArm.moveLeft()
+        robotArm.moveLeft()
 
     
 
