@@ -8,7 +8,7 @@ for x in range(3):
 for y in range(4):
     for i in range(moves):
         robotArm.grab()
-        robotArm.moveRight(4)
+        robotArm.moveRight()
         robotArm.drop()
         robotArm.moveLeft()
     robotArm.moveLeft()

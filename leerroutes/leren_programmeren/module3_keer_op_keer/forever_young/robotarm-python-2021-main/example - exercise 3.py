@@ -5,7 +5,6 @@ robotArm = RobotArm('exercise 3')
 # Jouw python instructies zet je vanaf hier:
 
 for move in range (4):
-    robotArm.scan()
     robotArm.grab()
     robotArm.moveRight()
     robotArm.drop()
