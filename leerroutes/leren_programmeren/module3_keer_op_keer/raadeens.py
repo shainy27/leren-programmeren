@@ -4,7 +4,14 @@ score = 0
 for ronden in range(1,21):        #20 ronden
     num = random.randint(1,1000)  #random int
     for geraden in range(10):     #je mag 10 keer raden
-        raden = int(input("Raad het getal tussen 1 en 1000  "))
+        getal = True   
+        while getal:
+            try:
+                raden = int(input("Raad het getal tussen 1 en 1000  "))
+                getal = False
+            except:
+                print("Vul een geldig getal in")
+        
         verschil = abs (num - raden)  #absolute value of, als het in de min gaat word het weer positief
 
         if raden == num:   #als het geraden is: break
@@ -26,6 +33,8 @@ for ronden in range(1,21):        #20 ronden
         print(f"Je hebt het getal niet geraden! Het getal was {num}")
     if ronden == 20:
         print(f"Je hebt {ronden} rondes gespeeld! Je eindscore is {score}")
+        print("Tot volgende keer!")
+        quit()
 
     again = input(f"Je score is nu {score}. Wil je nog een keer?  ")      #wil je nog een keer
     if again in ("No", "n","Nee","nee"):
@@ -34,7 +43,7 @@ for ronden in range(1,21):        #20 ronden
         quit()
 
 
-print(f"Je hebt {ronden} rondes gespeeld! Je eindscore is {score}")     
+print(f"Je hebt {ronden} rondes gespeeld! Je eindscore is {score}")    
 
 
 
