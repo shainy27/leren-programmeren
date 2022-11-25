@@ -7,16 +7,15 @@ for ronden in range(1,21):        #20 ronden
         raden = int(input("Raad het getal tussen 1 en 1000  "))
         verschil = abs (num - raden)  #absolute value of, als het in de min gaat word het weer positief
 
-        if num > raden:
-            print("Hoger!")
-        if raden > num:
-            print("Lager!")
-        elif raden == num:   #als het geraden is: break
+        if raden == num:   #als het geraden is: break
             print("Geraden! Top!")
             score += 1
             break
+        elif num > raden:
+            print("Hoger!")
+        elif raden > num:
+            print("Lager!")
                 
-        
         if verschil <=20:
             print("Je bent heel warm!")
         elif verschil <=50:
