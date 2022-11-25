@@ -1,15 +1,11 @@
 
-from tkinter import E
-
-
 num = 1
 
-while num >= 1 and num <13:
+while num <12:
     print(f'{num} AM')
     num = num + 1
 
-num = 12
-
-while num >= 12 and num <= 23:
+num = 11
+while num <= 23:
     print(num - 11, "PM")
     num = num + 1

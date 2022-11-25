@@ -1,12 +1,15 @@
 
 num = 0
+no_quit = True
 
-while True:
+while no_quit:
     vraag = input("?").lower()
     if vraag != "quit":
         num = num + 1
     else:
-        print(f"De vraag werd {num} keer gesteld")
-        exit()
+        no_quit = False
+
+print(f"De vraag werd {num} keer gesteld")
+        
     
         
