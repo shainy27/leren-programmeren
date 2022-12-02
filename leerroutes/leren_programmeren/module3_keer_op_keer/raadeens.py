@@ -3,12 +3,15 @@ import random
 score = 0                                 
 for ronden in range(1,21):        #20 ronden
     num = random.randint(1,1000)  #random int
-    for geraden in range(10):     #je mag 10 keer raden
+    geraden = 0
+    getal_geraden = False
+    while geraden <10 and not getal_geraden:
         getal = True   
         while getal:
             try:
                 raden = int(input("Raad het getal tussen 1 en 1000  "))
                 getal = False
+                geraden += 1
             except:
                 print("Vul een geldig getal in")
         
@@ -17,7 +20,7 @@ for ronden in range(1,21):        #20 ronden
         if raden == num:   #als het geraden is: break
             print("Geraden! Top!")
             score += 1
-            break
+            getal_geraden = True
         elif num > raden:
             print("Hoger!")
         elif raden > num:
@@ -42,8 +45,7 @@ for ronden in range(1,21):        #20 ronden
         print("Tot later!")
         quit()
 
-
-print(f"Je hebt {ronden} rondes gespeeld! Je eindscore is {score}")    
+  
 
 
 
