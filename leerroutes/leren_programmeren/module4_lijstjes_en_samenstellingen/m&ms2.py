@@ -1,18 +1,18 @@
 import random
 
-kleurMM = ['rood', 'blauw', 'groen', 'geel', 'bruin']
-MMzak = {}
-print("Er zitten nu nog 0 M&M's in de M&M zak. ")
-hoeveelheidMM = int(input("Hoeveel M&M's wilt u in de zak doen? "))
+kleuren = ['rood', 'blauw', 'groen', 'geel', 'bruin']
+zak = {}
+aantal = int(input("Hoeveel M&M's wilt u in de zak doen? "))
+
 
 for i in range(4): 
-    value = random.randint(0,hoeveelheidMM)            # randint kiest getal tussen 0 en hoeveelheidMM
-    hoeveelheidMM -= value                             # trekt random aantal MM van totaal af -> overig
-    color = random.choice(kleurMM)                     # geeft een random kleur uit lijst
-    kleurMM.remove(color)                              # haalt ^ weg uit lijst
-    MMzak[color] = value                               # maakt nieuwe value om weer mee te starten en bindt value (aantal) aan kleur
+    value = random.randint(0,aantal)            #randint tussen 0 en aantal m&ms
+    aantal -= value                             #trekt randint af van m&ms
+    color = random.choice(kleuren)              # color = random kleur uit de lijst
+    kleuren.remove(color)                       #haalt de random kleur uit de lijst
+    zak[color] = value                          #bind de random kleur aan de value 
 
 
-MMzak[kleurMM[0]] = hoeveelheidMM                      # laatste/ overige kleur aan aantal binden
+zak[kleuren[0]] = aantal                        # bind de laatste kleur aan de rest van de m&ms
 
-print(f"Er zitten nu {MMzak} in de zak")
+print(f"Er zitten nu {zak} in de zak")
