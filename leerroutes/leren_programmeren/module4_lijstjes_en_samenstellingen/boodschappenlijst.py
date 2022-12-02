@@ -27,6 +27,7 @@ print("")
 print("-[Boodschappenlijst]-")   #print boodschappenlijst
 print("")
 list(map(print, winkelmand))
+print("______________________")
 
 
 
