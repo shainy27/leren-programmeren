@@ -4,5 +4,10 @@ watermeloen = {'name' : 'watermeloen',
 'color' : 'green',
 'round' : True}
 fruitmand.append(watermeloen)
-for naam in range(len(fruitmand)):
-    print(fruitmand[naam]["weight"])
+gewicht1=0
+for naam in fruitmand:
+    gewicht = naam["weight"]
+    gewicht1+=gewicht
+
+
+print(gewicht1)

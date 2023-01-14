@@ -1,7 +1,7 @@
 #Adventure game
 
 from queue import Empty
-from test1 import *
+
 
 
 

@@ -1,5 +1,4 @@
 from fruitmand import fruitmand
-from operator import itemgetter
-fruitmand = sorted(fruitmand , key = itemgetter('weight',),reverse=True)
+fruitmand = sorted(fruitmand , key = lambda fruit:fruit['weight'], reverse=True)     #sorteerd de fruitmand op gewicht
 for fruit in fruitmand:
-        print(fruit.get('name'),fruit.get('weight'))
+        print(fruit['name'],fruit['weight'])

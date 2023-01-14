@@ -6,7 +6,7 @@ for fruit in range(len(fruitmand)):
         kleuren.append(fruitmand[fruit]['color'])
 
 while True:
-    kleurkiezen = input(f"Welke kleur? Kies uit de kleuren: {kleuren}")          #kies een kleur
+    kleurkiezen = input(f"Welke kleur? Kies uit de kleuren: {kleuren}")          #uit de lijst moet je een kleur kiezen
     if kleurkiezen not in kleuren:
         print("Deze kleur zit niet in de fruitmand")
     else:
@@ -25,11 +25,11 @@ for fruit in range(len(fruitmand)):
 verschilrond = abs(ronde - nietronde)  
 
 if ronde > nietronde:
-    print(f'Er zijn {verschilrond} meer ronde vruchten dan niet ronde vruchten in de kleur {kleurkiezen}')
+    print(f'Er zijn {ronde-nietronde} meer ronde vruchten dan niet ronde vruchten in de kleur {kleurkiezen}')
 elif ronde < nietronde: 
-    print(f"Er zijn {verschilrond} minder ronde vruchten dan niet ronde vruchten in de kleur {kleurkiezen}")
+    print(f"Er zijn {nietronde-ronde} minder ronde vruchten dan niet ronde vruchten in de kleur {kleurkiezen}")
 else: 
-    print(f"Er zijn {verschilrond} ronde vruchten en {verschilrond} niet ronde vruchten in de kleur {kleurkiezen}")
+    print(f"Er zijn {ronde} ronde vruchten en {nietronde} niet ronde vruchten in de kleur {kleurkiezen}")
 
 
             
