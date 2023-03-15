@@ -1,6 +1,7 @@
 #Adventure game
 
 from queue import Empty
+from adventure_game_art import slang
 
 
 
@@ -63,24 +64,7 @@ def main():
     Event().wait(1)  
     #je komt een slang tegen, je krijgt de keuze om te vechten of te rennen
     while True:  
-      print('''   
-                     ---_ ......._-_--.
-                    (|\ /      / /| \  \
-                    /  /     .'  -=-'   `.
-                  /  /    .'             )
-                _/  /   .'        _.)   /
-                / o   o        _.-' /  .'
-                \          _.-'    / .'*|
-                \______.-'//    .'.' \*|
-                  \|  \ | //   .'.' _ |*|
-                  `   \|//  .'.'_ _ _|*|
-                    .  .// .'.' | _ _ \*|
-                    \`-|\_/ /    \ _ _ \*\
-                    `/'\__/      \ _ _ \*\
-                    /^|            \ _ _ \*
-                  '  `             \ _ _ \      
-                                    \_
-           ''')
+      print(slang)
 
       snake = input("As you start exploring the jungle you hear noises coming from behind you. It's a snake! Fight the snake or Run? Run/Fight:")
       if snake in ("run", "r", "Run", "RUN") +  ("Fight", "f", "fight", "FIGHT"):
